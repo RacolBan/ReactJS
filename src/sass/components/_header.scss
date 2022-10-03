@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    height: 75vh;
+    @include bgImage("/images/1.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    @include flexCenter;
+    color: #fff;
+
+    &-content {
+        text-align: center;
+
+
+        a {
+            text-decoration: none;
+            font-size: 17px;
+            color: white;
+            display: inline-block;
+        }
+
+        &-dash {
+            margin: 0 20px;
+            font-size: 10px;
+            display: inline-block;
+            height: 15px;
+            width: 2px;
+            transform: rotate(10deg);
+            background-color: white;
+        }
+
+        &-title {
+            font-weight: bold;
+            font-size: 75px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            font-style: "poppins";
+        }
+
+        &-link2 {
+            color: aqua;
+        }
+    }
+
+}
