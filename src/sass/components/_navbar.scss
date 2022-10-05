@@ -17,6 +17,10 @@
     &-left img {
         width: 50px;
         height: auto;
+
+        @include responsive(1200px) {
+            padding-left: 20px;
+        }
     }
 
     &-right {

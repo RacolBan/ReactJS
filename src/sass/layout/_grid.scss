@@ -3,6 +3,13 @@
         width: (100% / 12) *$i;
         flex: 0 0 (100% / 12) *$i;
     }
+
+    @include responsive(785px) {
+        .col-#{$i} {
+            width: 100%;
+            flex: 0 0 100%;
+        }
+    }
 }
 
 .row {

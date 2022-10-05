@@ -2,6 +2,13 @@
     width: 100%;
     height: 500px;
 
+    @include responsive(785px) {
+        width: 100%;
+        height: auto;
+        top: 28em;
+    }
+
+
     &::before {
         content: '';
         position: absolute;
@@ -24,6 +31,18 @@
         background: #efefef;
     }
 
+    @include responsive(785px) {
+        &::before {
+            width: 0;
+            height: 0;
+        }
+
+        &::after {
+            width: 0;
+            height: 0;
+        }
+    }
+
     &-section {
         z-index: 2;
         display: flex;
@@ -33,12 +52,20 @@
     }
 
     &-content {
+        @include responsive(785px) {
+            margin-left: 45px;
+        }
+
         &-h6 {
             color: $green;
             letter-spacing: 14px;
             font-weight: 300;
             font-size: 17px;
             margin-bottom: 5px;
+
+            @include responsive(785px) {
+                font-size: 16px;
+            }
         }
 
         &-h3 {
@@ -47,6 +74,14 @@
             text-transform: uppercase;
             letter-spacing: 4px;
             text-shadow: 0 8px rgb(0 0 0 / 5%);
+
+            @include responsive(878px) {
+                font-size: 50px;
+            }
+
+            @include responsive(785px) {
+                font-size: 50px;
+            }
         }
     }
 
@@ -55,9 +90,19 @@
         padding-bottom: 15px;
         text-align: center;
 
+        @include responsive(875px) {
+            text-align: center;
+            background: transparent;
+        }
+
         &-image img {
             width: 100%;
             height: auto;
+
+            @include responsive(875px) {
+                width: 47%;
+                height: auto;
+            }
         }
 
         &-name {

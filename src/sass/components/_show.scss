@@ -7,9 +7,21 @@
     align-items: center;
     color: white;
 
+    @include responsive(1200px) {
+        padding: 0 25px;
+    }
+
     &-title h1 {
         font-size: 45px;
         font-weight: 700;
+
+        @include responsive(1045px) {
+            font-size: 30px;
+        }
+
+        @include responsive(878px) {
+            font-size: 25px;
+        }
     }
 
     &-card {
@@ -17,8 +29,13 @@
         background: #75dab4;
         padding: 80px 40px;
         right: 0;
-        bottom: -230px;
-        width: 470px;
+        bottom: -250px;
+        width: 430px;
+
+        @include responsive(878px) {
+            width: 330px;
+            bottom: -300px;
+        }
 
         &-h6 {
             color: black;
@@ -41,7 +58,11 @@
             font-size: 17px;
             margin-bottom: 30px;
             padding-bottom: 30px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+            @include responsive(878px) {
+                margin-bottom: -30px;
+            }
         }
     }
 }

@@ -33,7 +33,7 @@ export default function About() {
                 <div class="row mt-60">
                     {sections.map(section => {
                         return (
-                            <div class="col-4 pl-15" key={section.id}>
+                            <div class="col-4 pl-15 flexCenter" key={section.id}>
                                 <div class="about-section">
                                     <div class="about-section-icon">{section.icon}</div>
                                     <div class="about-section-title">{section.heading}</div>

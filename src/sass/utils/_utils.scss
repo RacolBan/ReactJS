@@ -1,6 +1,11 @@
 .container {
     width: 1200px;
     margin: 0 auto;
+
+    @include responsive(1200px) {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
 
 .whiteNav {
@@ -11,6 +16,15 @@
         color: black !important;
     }
 
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
 }
 
 .transparentNav {

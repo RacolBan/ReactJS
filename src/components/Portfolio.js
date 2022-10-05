@@ -14,7 +14,7 @@ export default function Portfolio() {
                 <div class="portfolio-section">
                     <div class="row">
                         <div className="col-4">
-                            <div className="portfolio__content">
+                            <div className="portfolio-content">
                                 <h6 className="portfolio-content-h6">EMPLOYEES</h6>
                                 <h3 className="portfolio-content-h3">OUR TEAM.</h3>
                             </div>
@@ -22,7 +22,7 @@ export default function Portfolio() {
                         <div class="col-8">
                             <div class="row">
                                 {cards.map(card => (
-                                    <div class="col-4 pl-15" key={card.id} >
+                                    <div class="col-4 pl-15 flex " key={card.id} >
                                         <div class="portfolio-card">
                                             <div class="portfolio-card-image">
                                                 <img src={card.img} alt="user" />
